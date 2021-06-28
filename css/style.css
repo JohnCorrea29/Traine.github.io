@@ -6,6 +6,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Playfair+Display+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
 .izquierda {
     background: url(../img/1.jpg);
     background-size: cover;
@@ -1056,5 +1066,492 @@ section .target .user:hover {
     }
     75% {
         transform: scale(0.9);
+    }
+}
+
+
+/* Ecommerce */
+
+.container {
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link {
+    list-style: none;
+    margin: 20px 0;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 8rem;
+}
+
+.navbar {
+    top: 0;
+    font-family: "Poppins", serif;
+    color: white;
+    background: rgb(20, 20, 20);
+}
+
+.flex-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-header span {
+    color: rgb(248, 104, 104);
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-toggle {
+    border: transparent;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    height: 0;
+    overflow: hidden;
+}
+
+.nav-open {
+    height: 100vh;
+}
+
+.banner {
+    background-color: rgb(0, 0, 0);
+}
+
+.left {
+    padding: 8%;
+}
+
+.rigth img {
+    width: 100%;
+}
+
+.banner .left h1 {
+    font-family: 'Dela Gothic One', cursive;
+    text-transform: uppercase;
+    font-size: 22px;
+    width: 70%;
+    margin-top: 5%;
+    color: #fff;
+}
+
+.banner .left p {
+    margin-top: 5%;
+    color: #fff;
+}
+
+.banner .left h1 {
+    color: #fff;
+}
+
+.banner .left button {
+    margin-top: 5%;
+    width: 50%;
+    height: 2.3rem;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.categorias {
+    padding: 3%;
+    text-transform: uppercase;
+}
+
+.categoria {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+}
+
+.categoria h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.categoria i {
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.buscar {
+    position: absolute;
+    padding: 5px;
+    margin-left: 6%;
+    background-color: #000;
+}
+
+.buscar input {
+    width: 0px;
+    height: 30px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn-search {
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    background: rgb(255, 74, 74);
+    width: 35px;
+    height: 35px;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buscar:hover input {
+    width: 240px;
+}
+
+.buscar input:focus {
+    width: 240px;
+}
+
+.keywords {
+    padding: 4%;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+.keywords li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.keywords li a {
+    text-transform: none;
+    text-decoration: none;
+    /* border: 1px solid #000; */
+    color: #000;
+    padding: 5px 5px;
+    text-align: center;
+    margin-top: 3px;
+    margin-left: 1%;
+    font-weight: 300;
+}
+
+.img-category {
+    padding: 4%;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.marcas {
+    background-color: rgb(226, 226, 226);
+    padding: 3%;
+}
+
+.marcas .logos img {
+    width: 55px;
+    height: 55px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.marcas .logos p {
+    padding: 3%;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.Carousel {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.Carousel h2 {
+    font-size: 26px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    padding: 5%;
+}
+
+.slick-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.slick {
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.slick h4 {
+    position: absolute;
+    z-index: 1;
+    font-size: 13px;
+    color: #fff;
+    padding: 3%;
+    margin-top: 95%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.slick h4 small {
+    font-size: 15px;
+    display: block;
+}
+
+.slick a img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    transition: .3s ease-in-out;
+}
+
+.slick a img:hover {
+    opacity: .85;
+}
+
+.slick-arrow {
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
+    border: 0;
+    cursor: pointer;
+}
+
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-arrow svg {
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, .7);
+}
+
+.slick-prev {
+    left: 0px;
+}
+
+.slick-next {
+    right: 0px;
+}
+
+.news-letter {
+    background-color: #000;
+    color: #fff;
+}
+
+.news-letter p {
+    padding: 2%;
+    margin-left: 4%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.news-letter button {
+    margin-bottom: 3%;
+    margin-left: 22%;
+    width: 50%;
+    height: 2.3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.filtros h2 {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.filtros span {
+    margin: 1%;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    color: rgb(122, 122, 122);
+}
+
+.filtro {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.filtro span {
+    margin-top: 2%;
+}
+
+.filtro label {
+    border: 1px solid #000;
+    padding: 5px 15px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    margin-top: 2%;
+}
+
+.producto img {
+    padding: 4%;
+    width: 100%;
+    height: 60vh;
+}
+
+.txt-producto {
+    padding: 4%;
+}
+
+.txt-producto p {
+    margin-bottom: 2%;
+    font-size: 14px;
+}
+
+.txt-producto span {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .categorias {
+        display: none;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .nav-header {
+        display: block;
+    }
+    .flex-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+    }
+    .nav-links {
+        height: auto;
+    }
+    .keywords ul {
+        text-align: center;
+    }
+    .nav-link {
+        display: inline-block;
+        border-bottom: none;
+    }
+    .nav-links span {
+        background: rgb(70, 70, 70);
+        padding: 8px 15px;
+        border-radius: 4px;
+    }
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+    .keywords h2 {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    .img-category h3 {
+        text-align: center;
+    }
+    .img-category .images {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+        gap: 0.4vw;
+    }
+    .marcas {
+        padding: 0%;
+        text-align: center;
+    }
+    .marcas .logos img {
+        margin-bottom: 2%;
+    }
+    .marcas .logos p {
+        padding: 1%;
+    }
+    .Carousel h2 {
+        padding: 0%;
+        text-align: center;
+    }
+    .news-letter {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+    .news-letter p {
+        margin-top: 1%;
+        font-size: 25px;
+    }
+    .news-letter button {
+        margin-top: 2%;
+    }
+    .filtros span {
+        display: none;
+    }
+    .filtros {
+        display: flex;
+        justify-content: space-around;
+    }
+    .filtros h2 {
+        margin-top: 3%;
+    }
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    }
+    .producto img {
+        width: 100%;
+        height: 80vh;
     }
 }
